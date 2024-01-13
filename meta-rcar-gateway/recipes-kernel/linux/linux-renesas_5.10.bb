@@ -10,12 +10,7 @@ RENESAS_BSP_URL = "git://github.com/hungcuiga1/linux-bsp.git"
 BRANCH = "main"
 SRCREV = "8404dd44e4d42703ee8d85bc7fb35997af8081e0"
 
-SRC_URI = "${RENESAS_BSP_URL};nocheckout=1;branch=${BRANCH};protocol=https \
-    file://0001-arm64-dts-renesas-r8a779f0-Add-Native-device-support.patch \
-    file://0002-arm64-dts-renesas-r8a779f0-Enable-IPMMU-main-and-HC-.patch \
-    file://0003-arm64-dts-renesas-r8a779f0-Enable-IPMMU-for-PCIe0-1.patch \
-    file://0004-arm64-dts-renesas-r8a779f0-Enable-IPMMU-for-eMMC.patch \
-    "
+SRC_URI = "${RENESAS_BSP_URL};nocheckout=1;branch=${BRANCH};protocol=https"
 SRC_URI += " \
     file://ufs.cfg \
     file://r8a779f0_ufs.bin \
